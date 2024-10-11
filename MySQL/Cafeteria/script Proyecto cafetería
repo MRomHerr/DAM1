@@ -1,0 +1,73 @@
+CREATE DATABASE cafeteria;
+USE cafeteria;
+
+CREATE TABLE platos (
+    id_plato INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DOUBLE(5,2) NOT NULL 
+);
+
+CREATE TABLE ensaladas (
+    id_ensalada INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DOUBLE(5,2) NOT NULL 
+);
+
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    DNI VARCHAR(10) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    tipo VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE publicaciones (
+	id_publicacion INT PRIMARY KEY,
+	fecha_publicacion DATE
+);
+
+CREATE TABLE reservas (
+    id_reserva INT AUTO_INCREMENT PRIMARY KEY,
+    id_plato INT,
+    id_ensalada INT,
+    id_usuario INT,
+    fecha DATE NOT NULL,
+    hora_cancelacion TIME,
+    FOREIGN KEY (id_plato) REFERENCES platos(id_plato),
+    FOREIGN KEY (id_ensalada) REFERENCES ensaladas(id_ensalada),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
+-- Inserción de datos utilizando una transacción
+START TRANSACTION;
+
+INSERT INTO platos (nombre, precio) VALUES
+    ('Espagueti a la boloñesa', 4.60),
+    ('Macarrones a la carbonara', 4.60),
+    ('Lentejas vegetarianas', 4.60),
+    ('Lomo a la plancha con pimientos', 4.60),
+    ('Judiones de Segovia', 4.60),
+    ('Guisado con alcachofas', 4.60),
+    ('Fabes con espinacas', 4.60),
+    ('Arroz negro', 4.60);
+
+INSERT INTO ensaladas (nombre, precio) VALUES
+    ('Ensalada de Pimientos', 4.00),
+    ('Ensalada de Pollo', 4.00);
+
+INSERT INTO usuarios (dni, nombre, apellidos, telefono, tipo) VALUES
+    ('12345678A', 'Juan', 'Pérez', '123456789', 'alumno'),
+    ('23456789B', 'María', 'González', '987654321', 'alumno'),
+    ('34567890C', 'Pedro', 'López', '456789012', 'profesor'),
+    ('45678901D', 'Ana', 'Martínez', '789012345', 'profesor'),
+    ('56789012E', 'Carlos', 'Rodríguez', '234567890', 'alumno');
+
+INSERT INTO reservas (id_plato, id_ensalada, id_usuario, fecha, hora_cancelacion) VALUES
+    (1, NULL, 1, '2023-02-20', NULL),
+    (2, 1, 2, '2023-02-21', NULL),
+    (3, NULL, 3, '2023-02-22', NULL),
+    (4, NULL, 4, '2023-02-23', NULL);
+
+-- Fin de la transacción con COMMIT
+COMMIT;

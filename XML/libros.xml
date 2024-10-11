@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+
+    <libro id="1">
+        <nombre>dfs</nombre>
+        <editorial>ANAYA</editorial>
+        <autor>Gabriel García Márquez</autor>
+        <fecha_de_publicacion>12/07/1945</fecha_de_publicacion>
+        <nºpaginas>450</nºpaginas>
+    </libro>
+
+     <libro id="2">
+        <nombre>dfsw</nombre>
+        <editorial>PLANETA</editorial>
+        <autor>William Shakespeare</autor>
+        <fecha_de_publicacion>24/04/1258</fecha_de_publicacion>
+        <nºpaginas>869</nºpaginas>
+    </libro>
+
+     <libro id="3">
+        <nombre>ssfd</nombre>
+        <editorial>ALFAGUARA</editorial>
+        <autor>Charles Dickens</autor>
+        <fecha_de_publicacion>10/11/1565</fecha_de_publicacion>
+        <nºpaginas>201</nºpaginas>
+    </libro>
+
+</libros>

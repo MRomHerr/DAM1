@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Arboles>
+    <arbol id="1">
+        <nombre_latin>Acer monspessulanum</nombre_latin>
+        <nombre_comun>Arce de Montpellier, Arce menor</nombre_comun>
+        <Vegetacion>Caducifolio</Vegetacion>
+        <Altura>De 6 a 10 metros</Altura>
+        <Forma_estructura>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</Forma_estructura>
+        <Color_primavera>Haz verde brillante, envés verde blanquecino</Color_primavera>
+        <Resistencia_heladas>Heladas fuertes (hasta-15ºC)</Resistencia_heladas>
+    </arbol>
+
+    <arbol id="2">
+        <nombre_latin>Olea europea</nombre_latin>
+        <nombre_comun>Olivo</nombre_comun>
+        <Vegetacion>Perenne</Vegetacion>
+        <Altura>De 8 a 15 metros</Altura>
+        <Forma_estructura>Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso</Forma_estructura>  
+        <Color_primavera>Haz verde oscuro, envés verde plateado</Color_primavera>
+        <Resistencia_heladas>Heladas medias (hasta -10ºC)</Resistencia_heladas>
+    </arbol>
+
+    <arbol id="3">
+        <nombre_latin>Platanus orientalis</nombre_latin>
+        <nombre_comun>Plátano</nombre_comun>
+        <Vegetacion>Caducifolio</Vegetacion>
+        <Altura>De 20 a 25 metros</Altura>
+        <Forma_estructura>Copa ovoidal. Tronco principal recto. Ramaje expandido</Forma_estructura>
+        <Color_primavera>Haz verde medio, envés verde claro</Color_primavera>
+        <Color_otono>Ocre</Color_otono>
+        <Resistencia_heladas>Heladas fuertes (hasta-20ºC)</Resistencia_heladas>
+    </arbol>
+
+    <arbol id="4">
+        <nombre_latin>Quercus ilex</nombre_latin>
+        <nombre_comun>Encina</nombre_comun>
+        <Vegetacion>Perenne</Vegetacion>
+        <Altura>Entorno a 25 metros</Altura>
+        <Forma_estructura>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</Forma_estructura>
+        <Color_primavera>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado</Color_primavera>
+        <Resistencia_heladas>Heladas fuertes (hasta-15ºC)</Resistencia_heladas>
+    </arbol>
+</Arboles>
+    

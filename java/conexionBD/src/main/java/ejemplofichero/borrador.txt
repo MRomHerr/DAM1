@@ -1,0 +1,3 @@
+coso1    EDAD: 1    CIUDAD: coso1
+Juan::58::barcelona
+juan2::2::2

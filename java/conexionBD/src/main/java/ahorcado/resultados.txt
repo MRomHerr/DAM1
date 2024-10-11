@@ -1,0 +1,3 @@
+Intentos restantes: 6, Puntos ganados: 0, Palabra correcta: programacion
+Intentos restantes: 0, Puntos ganados: 6, Palabra correcta: codigo
+Intentos restantes: 3, Puntos ganados: 3, Palabra correcta: ahorcado

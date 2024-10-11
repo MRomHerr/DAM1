@@ -1,0 +1,35 @@
+
+Apellidos: Torres
+Nombre: Juan
+Fecha de nacimiento: 1960-01-01
+Fecha de ingreso: 1980-05-24
+Puesto: Jefe
+Salario: 60000.0
+
+Apellidos: Gonzalez
+Nombre: Sara
+Fecha de nacimiento: 1980-05-02
+Fecha de ingreso: 1999-06-03
+Puesto: Secretaria
+Salario: 25000.0
+
+Apellidos: Sanchez
+Nombre: Elena
+Fecha de nacimiento: 1990-09-03
+Fecha de ingreso: 2010-11-02
+Puesto: TecnicoFP
+Salario: 30000.0
+
+Apellidos: Uriel
+Nombre: Pepe
+Fecha de nacimiento: 1991-10-04
+Fecha de ingreso: 2015-10-01
+Puesto: Administrativo
+Salario: 24000.0
+
+Apellidos: Romero
+Nombre: Marcos
+Fecha de nacimiento: 2004-11-29
+Fecha de ingreso: 2018-07-03
+Puesto: Administrativo
+Salario: 22000.0

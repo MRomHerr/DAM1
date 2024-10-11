@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="clinica">
+  <ClassDiagramComponents>
+    <Class name="Fisica" package="" visibility="public" xPosition="199.0" yPosition="107.0">
+      <Fields>
+        <Field name="DNI" type="varchar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Jurídica" package="" visibility="public" xPosition="428.0" yPosition="107.0">
+      <Fields>
+        <Field name="CIF" type="varchar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="287.0" yPosition="282.0">
+      <Fields>
+        <Field name="email" type="varchar" visibility="private"/>
+        <Field name="direccion" type="varchar" visibility="private"/>
+        <Field name="telefono" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Animal" package="" visibility="public" xPosition="613.0" yPosition="282.0">
+      <Fields>
+        <Field name="Tipo" type="varchar" visibility="private"/>
+        <Field name="Nombre" type="varchar" visibility="private"/>
+        <Field name="Edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Histórico" package="" visibility="public" xPosition="922.0" yPosition="301.0">
+      <Fields>
+        <Field name="RefHistorico" type="varchar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ElementoHistorico" package="" visibility="public" xPosition="922.0" yPosition="107.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Diagnóstico" package="" visibility="public" xPosition="613.0" yPosition="511.0">
+      <Fields>
+        <Field name="Fecha" type="date" visibility="private"/>
+        <Field name="Descripcion" type="varchar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Personal" package="" visibility="public" xPosition="915.0" yPosition="501.0">
+      <Fields>
+        <Field name="Nombre" type="varchar" visibility="private"/>
+        <Field name="Apellidos" type="varchar" visibility="private"/>
+        <Field name="FechaContratacion" type="date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Veterinario" package="" visibility="public" xPosition="1182.0" yPosition="458.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Auxiliar" package="" visibility="public" xPosition="1182.0" yPosition="611.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Factura" package="" visibility="public" xPosition="613.0" yPosition="751.0">
+      <Fields>
+        <Field name="RefFactura" type="varchar" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ElementoFactura" package="" visibility="public" xPosition="324.0" yPosition="732.0">
+      <Fields>
+        <Field name="Elemento" type="varchar" visibility="private"/>
+        <Field name="Precio" type="double" visibility="private"/>
+        <Field name="Cantidad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Jurídica" target="Persona"/>
+    <IsRelation name="is" source="ElementoHistorico" target="Histórico"/>
+    <HasRelation name="" source="Factura" target="Diagnóstico" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Fisica" target="Persona"/>
+    <HasRelation name="" source="Histórico" target="Animal" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Veterinario" target="Personal"/>
+    <HasRelation name="" source="ElementoFactura" target="Factura" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Auxiliar" target="Personal"/>
+    <HasRelation name="" source="Personal" target="Diagnóstico" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="" source="Persona" target="Animal" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="" source="Diagnóstico" target="Animal" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,17 @@
+CREATE DATABASE JuegosDB;
+
+USE JuegosDB;
+
+CREATE TABLE Jugadores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Partidas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    jugador_id INT,
+    eleccion VARCHAR(255),
+    resultado VARCHAR(255),
+    FOREIGN KEY (jugador_id) REFERENCES Jugadores(id)
+);
+ALTER TABLE Partidas ADD COLUMN fecha_hora DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;

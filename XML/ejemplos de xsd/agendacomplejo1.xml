@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<agenda>
+    -<contacto>
+        <nombre>Alfredo</nombre>
+        <apellido>Paredes</apellido>
+        <email>elparedes@gmail.com</email>
+        -<direccion>
+            <calle>Vélez de Benaudalla</calle>
+            <cp>00601</cp>
+        </direccion>
+    </contacto>
+</agenda>

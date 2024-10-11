@@ -1,0 +1,30 @@
+insert into customer (customername, customerid, contactname, address, city, postalcode, country) values (
+
+'Pablo', 6, 'Pablo', 'Calle mayor', 'Madrid', 28223, 'Espana'
+
+)
+
+
+
+update customer set city = 'Frankfurt' where CustomerID = 1
+
+
+
+update customer set address = 'calle nueva' where CustomerID = 1
+
+
+
+update customer set postalcode = 60487 where CustomerID = 1
+
+
+
+update customer set contactName = 'Amancio Ortega' where country = 'Mexico'
+
+
+
+delete from customer where country = 'Sweden'
+
+
+
+update customer set customername = concat('M-', customername) where country like 'M%'c
+

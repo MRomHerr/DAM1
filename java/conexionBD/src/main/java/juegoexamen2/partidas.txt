@@ -1,0 +1,14 @@
+DNI: 11111111q
+Nombre: marcos romero
+Fecha partida: Tue Jun 11 12:26:02 CEST 2024
+Puntuación: 0.0
+N° intentos: 5
+Intentos: [4026, 2000, 3000, 2555, 2145]
+
+DNI: 14589458s
+Nombre: pedro pascal
+Fecha partida: Tue Jun 11 12:27:28 CEST 2024
+Puntuación: 0.0
+N° intentos: 5
+Intentos: [4544, 1455, 1222, 1455, 5000]
+

@@ -1,0 +1,89 @@
+create table if not exists entrenador(
+	cod_entrenador int primary key, 
+	fecha_nacimiento date not null,
+	nacionalidad varchar (20) not null,
+	categoria varchar (20) not null,
+	nombre varchar (20) not null,
+	apellidos varchar (60) not null
+);
+
+create table if not exists equipo(
+	cod_equipo int primary key,
+	cod_entrenador int not null unique,
+	nombre varchar (20) not null,
+	estado varchar (20) not null,
+	ciudad varchar (20) not null,
+	foreign key (cod_entrenador) references entrenador (cod_entrenador) on delete cascade
+);
+
+
+
+create table if not exists partido(
+	cod_partido int primary key,
+	goles_visitantes int,
+	goles_casa int,
+	fecha_partido date not null
+);
+
+
+
+create table if not exists jugador(
+	cod_jugador int primary key,
+	cod_equipo int not null,
+	lesionado char (2) check (lesionado = ('si'or'no')),
+	suspendido char (2) check (suspendido in ('si', 'no')),
+	venta char (2) check (venta = ('si'or'no')),
+	posicion varchar (20) not null,
+	nombre varchar (20) not null,
+	apellidos varchar (50) not null,
+	foreign key (cod_equipo) references equipo(cod_equipo) on delete cascade
+);
+
+
+drop table jugador
+
+
+create table if not exists jugador(
+	cod_jugador int primary key,
+	cod_equipo int not null,
+	lesionado enum ('si', 'no'),
+	suspendido char (2) check (suspendido in ('si', 'no')),
+	venta char (2) check (venta = ('si'or'no')),
+	posicion varchar (20) not null,
+	nombre varchar (20) not null,
+	apellidos varchar (50) not null,
+	foreign key (cod_equipo) references equipo(cod_equipo) on delete cascade
+);
+
+
+create table if not exists marcan_gol(
+	cod_jugador int not null,
+	cod_partido int not null,
+	cod_gol int not null,
+	minuto int not null,
+	descripcion varchar (70),
+	primary key (cod_jugador, cod_partido),
+	foreign key (cod_jugador) references jugador(cod_jugador) on delete cascade,
+	foreign key (cod_partido) references partido(cod_partido) on delete cascade
+);
+
+
+create table if not exists juegan (
+	cod_equipo int not null,
+	cod_partido int not null,
+	local_visitante enum ('local','visitante'),
+	primary key (cod_equipo, cod_partido),
+	foreign key (cod_equipo) references equipo(cod_equipo) on delete cascade,
+	foreign key (cod_partido) references partido(cod_partido) on delete cascade
+);
+
+
+
+
+
+
+
+
+
+
+

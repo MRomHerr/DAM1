@@ -1,0 +1,32 @@
+-- ejercicio 5.2
+CREATE TABLE customer (
+    CustomerID	INT PRIMARY KEY,
+    CustomerName VARCHAR(50),
+    ContactName	VARCHAR(50),
+    Address	VARCHAR(50),
+    City VARCHAR(50),
+    PostalCode INT,
+    Country VARCHAR(50)
+);
+-- realiza 3 sentencias
+INSERT INTO customer VALUES ('Alfreds Futterkiste', 'Maria Anders', 'Obere Str.57', 'Berlin', 12.209, 'Germany');
+INSERT INTO customer VALUES ('Ana Trujillo Empareddos y helado, Ana Trujillo', 'Avda. de la Constitución 2222', 'Mexico D.F.', 5.021, 'México');
+INSERT INTO customer values ('Antonio Moreno Taquería', 'Antoio Moreno','Mataderos 2312', 'México D.F', 5.023, 'Mexico')
+
+-- Modificar la dirección, código postal y ciudad del primer cliente ya que se ha mudado a Frankfurt
+UPDATE customer
+SET Address = 'Nueva dirección', PostalCode = NuevoCódigoPostal, City = 'Frankfurt'
+WHERE CustomerID = 1;
+
+-- Modificar la tabla ya que Amancio Ortega ha comprado a todos los clientes de Mexico
+UPDATE customer
+SET CustomerName = 'Amancio Ortega '
+WHERE Country = 'Mexico';
+
+-- Se han perdido todos los clientes de Suecia, por lo que hay que eliminarlos.
+DELETE FROM customer WHERE Country = 'Suecia';
+
+-- modificarla para que todos los nombres de clientes que vivan en un país que empiece por M, se cambien M-[NombreCliente], por ejemplo un cliente que se llame Alejandro y que viva en Mexico, pasará a llamarse: M-Alejandro.
+UPDATE customer
+SET CustomerName = CONCAT('M-', CustomerName)
+WHERE Country LIKE 'M%';

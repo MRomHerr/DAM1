@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agendadtd.dtd">
+
+<agenda>
+
+    <contacto>
+        <nombre>Alfredo</nombre>
+        <apellido>Paredes</apellido>
+        <apellido>Gutiérrez</apellido>
+        <telefono pais="Australia">+64 758 432 21</telefono>
+        <email>elparedes@gmail.com</email>
+        <direccion>
+            <calle>Vélez de Benaudalla</calle>
+            <numero>3</numero>
+            <cp>00601</cp>
+        </direccion>
+    </contacto>
+
+    <contacto>
+        <nombre>Juan</nombre>
+        <apellido>Pis</apellido>
+        <apellido>Gonzalez</apellido>
+        <telefono pais="Brasil">+55 333 738 51</telefono>
+        <email>eljuanpisisrial@gmail.com</email>
+        <direccion>
+            <calle>East Blue</calle>
+            <numero>26</numero>
+            <cp>28013</cp>
+        </direccion>
+    </contacto>
+</agenda>

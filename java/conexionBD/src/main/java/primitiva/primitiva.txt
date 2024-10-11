@@ -1,0 +1,4 @@
+Combinación ganadora: [4, 28, 47, 44, 36, 41]
+Tu combinación: [5, 12, 4, 23, 49, 8]
+Número de aciertos: 1
+

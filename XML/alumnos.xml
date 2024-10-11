@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+
+    <alumno id="1">
+        <edad>18</edad>
+        <nombre>Marcos</nmbre>
+        <direccion>Alemania6</direccion>
+        <localidad>Madrid</localidad>
+    </alumno>
+
+    <alumno id="2">
+        <edad>21</edad>
+        <nombre>Pablo</nmbre>
+        <direccion>Portugalete12</direccion>
+        <localidad>Madrid</localidad>
+    </alumno>
+
+    <alumno id="3">
+        <edad>38</edad>
+        <nombre>Ana</nmbre>
+        <direccion>hjgh8</direccion>
+        <localidad>Sevilla</localidad>
+    </alumno>
+
+    <alumno id="4">
+        <edad>42</edad>
+        <nombre>Jaime</nmbre>
+        <direccion>Bélgica6</direccion>
+        <localidad>Barcelona</localidad>
+    </alumno>
+ 
+</alumnos>

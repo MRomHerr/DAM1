@@ -1,0 +1,21 @@
+1::Juan::Torres
+2::Jose::Alberto::Gonzalez
+3::Elena::Esteban
+4::Pepe::Blano
+5::Miguel::Perez
+6::Eva::Lopez
+
+
+
+multiplicas
+
+727
+727
+34.227
+727-50=600 600/255=2  10.10.34.90
+
+10.10.32.0
+calcula el host 256
+256-0=256 256/255=1  256-255=1
+
+25

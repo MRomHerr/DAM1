@@ -1,0 +1,6 @@
+
+Nombre: Elena
+Apellidos: Sanchez
+Fecha de nacimiento: 1990-09-03
+Fecha de ingreso: 2010-11-02
+Fecha de finalizacion: 2024-05-07

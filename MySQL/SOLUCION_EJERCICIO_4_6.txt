@@ -1,0 +1,36 @@
+-- 1 --
+alter table tienda add column nuevaColumna varchar(50);
+
+-- 2 --
+alter table tienda modify codpostal char(50);
+
+-- 3 --
+alter table fabricante drop nif;
+
+-- 4 --
+alter table fabricante add column nevaColumnaFabricante varchar(50);
+
+-- 5 --
+alter table articulo modify fabricanteID decimal(5) not null;
+
+-- 6 --
+drop table existencia;
+
+-- 7 --
+alter table empleado add constraint nombre_empleado_uq unique(nombre);
+
+-- 8 --
+alter table empleado drop constraint empleados_salario_chk_mayor_0;
+
+-- 9 --
+alter table tienda add column contacto varchar(20);
+alter table tienda add column telefono varchar(15);
+
+-- 10 --
+alter table tienda modify direccion varchar(40);
+
+-- 11 --
+alter table tienda modify direccion varchar(40) not null;
+
+-- 12 --
+alter table existencia add constraint cantidad_existencia_chk check(cantidad >= 0);

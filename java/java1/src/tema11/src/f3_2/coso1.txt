@@ -1,0 +1,11 @@
+linea 0
+linea 01
+linea 08
+linea 03
+linea 04
+linea 05
+linea 13
+linea 07 
+linea 02
+linea 22
+linea a

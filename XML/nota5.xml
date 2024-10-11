@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE nota[
+<!ELEMENT nota (para, de, cabecera, cuerpo)>
+<!ATTLIST nota amigo CDATA #REQUIRED>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+<!ATTLIST cuerpo id CDATA #REQUIRED>
+]>
+
+<nota amigo="1">
+    <para>Jose</para>
+    <de>Juani</de>
+    <cabecera>Recordatorio</cabecera>
+    <cuerpo id="1">No me olvides este finde</cuerpo>
+</nota>

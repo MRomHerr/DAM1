@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<agenda>
+    -<contacto id="1">
+        <nombre>Alfredo</nombre>
+        <apellido>Paredes</apellido>
+        <email>elparedes@gmail.com</email>
+        -<direccion>
+            <calle>Vélez de Benaudalla</calle>
+            <cp>00601</cp>
+        </direccion>
+    </contacto>
+    -<contacto id="2">
+        <nombre>Paco</nombre>
+        <apellido>Pérez</apellido>
+        <email>elpere@gmail.com</email>
+        -<direccion>
+            <calle>Av.Alemania</calle>
+            <cp>2243</cp>
+        </direccion>
+    </contacto>
+</agenda>

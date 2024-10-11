@@ -1,0 +1,28 @@
+Combinación ganadora: [10, 3, 47, 32, 30, 37]
+Tu combinación: [4, 4, 4, 4, 4, 4]
+Número de aciertos: 0
+
+Combinación ganadora: [42, 10, 33, 22, 20, 49]
+Tu combinación: [10, 10, 10, 10, 10, 10]
+Número de aciertos: 0
+
+Combinación ganadora: [35, 2, 43, 44, 13, 37]
+Tu combinación: [10, 10, 10, 10, 10, 10]
+Número de aciertos: 0
+
+Combinación ganadora: [18, 10, 39, 1, 20, 15]
+Tu combinación: [10, 12, 5, 8, 10, 1]
+Número de aciertos: 0
+
+Combinación ganadora: [7, 46, 38, 19, 30, 44]
+Tu combinación: [10, 10, 10, 10, 10, 10]
+Número de aciertos: 0
+
+Combinación ganadora: [4, 49, 2, 30, 42, 27]
+Tu combinación: [10, 10, 10, 1, 0, 5]
+Número de aciertos: 0
+
+Combinación ganadora: [4, 49, 2, 30, 42, 27]
+Tu combinación: [15, 4, 4, 4, 4, 4]
+Número de aciertos: 0
+

@@ -1,0 +1,36 @@
+#Selecciona el nombre del cliente y ciudad y ordenalos por orden alfabético
+ select customerName, city from customer order by customerName ASC
+
+#Seleccione los países distintos donde tienes clientes.
+ select distinct(country) from customer where customerName is not null
+ 
+ #Selecciona el nombre de clientes de Mexico.
+ select customerName from customer where country = 'Mexico'
+ 
+#Selecciona los nombres de comercio y contactos de los clientes de Alemania ubicados en Berlin.
+ 
+ select customerName, contactName from customer where country = 'Germany' and city ='Berlin'
+ 
+#Selecciona los nombres de comercio y contactos de los clientes que no están en Alemania
+select contactName, customerName from customer where country != 'Germany'
+
+#Seleccionar los clientes cuyo nombre de contacto contiene la palabra "Moreno"~
+select * from customer where contactName like '%Moreno%'
+
+#Seleccionar los clientes cuyo código postal es NULL
+select * from customer where postalCode is null
+
+#Ordenar los clientes por nombre de ciudad en orden alfabético
+select * from customer order by city asc
+
+
+#Seleccionar los primeros 3 clientes en orden alfabético por nombre
+
+select * from customer order by customerName asc limit 3
+
+
+#Contar el numero de registro totales de la tabla
+select count(customerId) from customer
+
+#Contar numero de paises
+select count(distinct (country)) from customer

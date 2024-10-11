@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=Es>
+<head>
+<title>actividad2</title>
+</head>
+<body bgcolor="#F7FB03">
+<center>
+
+<font color="#33DAFF">
+<h1>Mi primer encabezado y a color utilizando font.</h1>
+</font>
+
+<h2 style="font-family:verdana;">Mi segundo encabezado.</h2>
+<h3>Mi tercer párrafo.</h3>
+<h4 style="font-family:Courier New;">Mi cuarto encabezado.</h4>
+<h5>Mi quinto encabezado.</h5>
+
+<font color="#3CFF33">
+<h6>Mi último encabezado y a color utilizando font.</h6>
+</font>
+<p>Mi primer párrafo.</p>
+<p style="color:#33DAFF"> párrafo con color utilizando style.</p>
+<p>Segundo párrafo con un punto y aparte.<br>Continuación de mi segundo párrafo con punto y aparte</p>
+<img src="https://www.blogdelfotografo.com/wp-content/uploads/2020/04/fotografo-paisajes.jpg"  width="700" height="400">
+
+<p>
+<a href="https://www.araudi-slp.com/paisaje"> enlace a una página.</a>
+</p>
+
+</center>
+<font color=#FB0368>
+<p style="font-family:Trebuchet MS"> Fleetwood Mac es una banda británica de rock formada en Londres en 1967. Fundada por Peter Green (voz y guitarra), su primera alineación estaba.
+<br>En mayo de 1970, Green dejó la banda por asuntos personales y, más tarde, en ese mismo año, ingresó la teclista y vocalista Christine McVie. En menos de dos años, sus dos guitarristas restantes también se fueron de la banda: primero Spencer en 1971 y luego Kirwan en 1972.
+</p>
+</font>
+</body>
+</html>
