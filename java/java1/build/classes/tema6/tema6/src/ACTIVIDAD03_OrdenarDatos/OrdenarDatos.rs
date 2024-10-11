@@ -1,3 +1,0 @@
-ACTIVIDAD03_OrdenarDatos.OrdenarDatos$Escuela
-ACTIVIDAD03_OrdenarDatos.OrdenarDatos
-ACTIVIDAD03_OrdenarDatos.OrdenarDatos$Alumno

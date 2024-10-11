@@ -1,3 +1,0 @@
-ACTIVIDAD02_Arrays_objetos.ArrayObjetos$Mes
-ACTIVIDAD02_Arrays_objetos.ArrayObjetos
-ACTIVIDAD02_Arrays_objetos.ArrayObjetos$Temperatura
